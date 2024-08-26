@@ -218,4 +218,8 @@ video {
     .video {
         grid-template-columns: 1fr;
     }
+
+    .section7 {
+        flex-direction: column;
+    }
 }
