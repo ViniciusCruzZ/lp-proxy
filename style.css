@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
+
 }
 
 :root {
@@ -21,25 +23,16 @@ body {
     color: #ffffff;
     font-family: var(--primary-font);
     overflow-x: hidden;
-    padding: 20px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
 }
 
 h1, h2 {
     color: var(--yellow-color);
     font-family: var(--secondary-font);
-}
-
-#ellipse1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#ellipse2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    rotate: 180deg;
 }
 
 header {
@@ -87,7 +80,7 @@ header {
 
 .section2 {
     display: flex;
-    margin: 150px auto;
+    margin: 150px;
     justify-content: center;
     align-items: center;
 }
@@ -141,13 +134,12 @@ video {
 }
 
 .video {
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
-    width: 80%;
-    margin: auto;
 }
 
 .faq-container {
@@ -194,6 +186,12 @@ video {
     padding: 15px;
 }
 
+@media (max-width: 1440px) {
+    .video {
+        margin: auto;
+    }
+}
+
 @media (max-width: 1024px) {
     .video {
         display: grid;
@@ -209,6 +207,8 @@ video {
 @media (max-width: 724px) {
     .section2 {
         flex-direction: column-reverse;
+        max-width: 90%;
+        padding: 10px;
     }
 
     .text-header {
@@ -221,5 +221,11 @@ video {
 
     .section7 {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 724px) {
+    .text {
+        width: 90vw;
     }
 }
