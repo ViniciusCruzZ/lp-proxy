@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
-
 }
 
 :root {
@@ -224,8 +222,8 @@ video {
     }
 }
 
-@media (max-width: 724px) {
+@media (max-width: 450px) {
     .text {
-        width: 90vw;
+        max-width: 90vw;
     }
 }
