@@ -20,8 +20,8 @@ body {
     background-color: #0A0A0A;
     color: #ffffff;
     font-family: var(--primary-font);
-    margin: auto;
     overflow-x: hidden;
+    padding: 20px;
 }
 
 h1, h2 {
@@ -52,8 +52,9 @@ header {
 }
 
 #cloud-pw {
-    display: inline-block;
-    margin: 15px 50%;
+    display: block;
+    padding: 15px;
+    margin: auto;
 }
 
 .text-header {
@@ -78,10 +79,10 @@ header {
 }
 
 .arrowdown {
-    display: inline-block;
-    margin: 40px 40%;
-    bottom: -65px;
-    position: absolute;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    bottom: 0;
 }
 
 .section2 {
@@ -146,7 +147,7 @@ video {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    width: 1200px;
+    width: 80%;
     margin: auto;
 }
 
@@ -192,4 +193,30 @@ video {
 .faq-item.active .faq-answer {
     max-height: 150px;
     padding: 15px;
+}
+
+@media (max-width: 1024px) {
+    .video {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+
+    #mockup {
+        width: 300px;
+    }
+}
+
+@media (max-width: 724px) {
+    .section2 {
+        flex-direction: column-reverse;
+    }
+
+    .text-header {
+        width: 90%;
+    }
+
+    .video {
+        grid-template-columns: 1fr;
+    }
 }
