@@ -220,6 +220,10 @@ video {
     .section7 {
         flex-direction: column;
     }
+
+    .text-header h1 {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 450px) {
