@@ -2,7 +2,7 @@
 
 /* KEEPO */
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,12 +50,9 @@ h3 {
 .card img {
     width: 65px;
     border-radius: 5px;
-} */
+}
 
-
-/* Animações */
-
-/* .bounce-top {
+.bounce-top {
     -webkit-animation: bounce-top 1s both;
     animation: bounce-top 1s both;
 }
@@ -178,13 +175,13 @@ h3 {
         animation-timing-function: ease-out;
         opacity: 1;
     }
-} */
+}
 
 /* /KEEPO */
 
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -414,4 +411,4 @@ video {
     .text {
         max-width: 90vw;
     }
-}
+} */
