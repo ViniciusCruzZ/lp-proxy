@@ -2,7 +2,7 @@
 
 /* KEEPO */
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -175,13 +175,13 @@ h3 {
         animation-timing-function: ease-out;
         opacity: 1;
     }
-} */
+}
 
 /* /KEEPO */
 
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -411,4 +411,4 @@ video {
     .text {
         max-width: 90vw;
     }
-}
+} */
