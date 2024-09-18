@@ -39,28 +39,47 @@
 
     <script>
         const link = 'https://meubackredirect.com.br';
-      
+
         function setBackRedirect(url) {
-          let urlBackRedirect = url;
-          urlBackRedirect = urlBackRedirect =
-            urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
-      
-          history.pushState({}, '', location.href);
-          history.pushState({}, '', location.href);
-          history.pushState({}, '', location.href);
-      
-          window.addEventListener('popstate', () => {
-            console.log('onpopstate', urlBackRedirect);
-            setTimeout(() => {
-              location.href = urlBackRedirect;
-            }, 1);
-          });
+            let urlBackRedirect = url;
+            urlBackRedirect = urlBackRedirect =
+                urlBackRedirect.trim() +
+                (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+                document.location.search.replace('?', '').toString();
+
+            history.pushState({}, '', location.href);
+            history.pushState({}, '', location.href);
+            history.pushState({}, '', location.href);
+
+            window.addEventListener('popstate', () => {
+                console.log('onpopstate', urlBackRedirect);
+                setTimeout(() => {
+                    location.href = urlBackRedirect;
+                }, 1);
+            });
         }
-      
+
         setBackRedirect(link);
-      </script>
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '833977372055804');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=833977372055804&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -187,7 +206,10 @@
                 <div class="faq-item">
                     <button class="faq-question">Após o pagamento eu vou ter acesso onde?</button>
                     <div class="faq-answer">
-                        <p>Após o pagamento você já é chamado automaticamente pelo whatsApp por nossa equipe para prosseguir com todo o passo, além de receber seu acesso  ao aplicativo por email. Por isso se atente na hora de fazer o pagamento para colocar sua informações como email e número de whatsApp corretamente.</p>
+                        <p>Após o pagamento você já é chamado automaticamente pelo whatsApp por nossa equipe para
+                            prosseguir com todo o passo, além de receber seu acesso ao aplicativo por email. Por isso se
+                            atente na hora de fazer o pagamento para colocar sua informações como email e número de
+                            whatsApp corretamente.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -241,7 +263,8 @@
             style="background-color: #DC2626; max-width: 780px; padding: 30px 35px; border-radius: 16px; display: flex; gap: 30px; margin: 50px auto; justify-content: center; align-items: center;">
             <img src="assets/alert.png" style="max-width: 100px; max-height: 100px;" id="alert">
             <p style="text-align: justify;">
-                Após efetuar o pagamento, por gentileza, verifique seu WhatsApp e encaminhe-me o comprovante juntamente com o seu email, para que eu possa realizar a verificação com total atenção.
+                Após efetuar o pagamento, por gentileza, verifique seu WhatsApp e encaminhe-me o comprovante juntamente
+                com o seu email, para que eu possa realizar a verificação com total atenção.
             </p>
         </div>
 
